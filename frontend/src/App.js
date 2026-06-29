@@ -18,7 +18,8 @@ function App() {
   const handleLogin = async () => {
 
     // Send username and password as simple text (NOT JSON)
-    const response = await fetch('http://localhost:3000/login', {
+    const backendURL = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+    const response = await fetch(`${backendURL}/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, // simple text format
       body: new URLSearchParams({ username, password }),  // sends: username=arpit&password=1234
