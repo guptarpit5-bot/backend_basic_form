@@ -1,0 +1,98 @@
+/* Center everything on the page */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+/* The white box in the middle */
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+.card h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.card p {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* Label + Input group */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* Input highlight when clicked */
+.form-group input:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+/* Login Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.btn:hover {
+  background-color: #574fd6;
+}
+
+/* Result message box */
+.message {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Green box for success */
+.message.success {
+  background-color: #d4edda;
+  color: #276749;
+  border: 1px solid #a3d9a5;
+}
+
+/* Red box for error */
+.message.error {
+  background-color: #ffe0e0;
+  color: #c0392b;
+  border: 1px solid #f5c6c6;
+}
